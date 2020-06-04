@@ -17,6 +17,7 @@ var chart_features = {
 	subtype: null,
 	foundChart: false,
 	foundSVG: false,
+	// chartDiv: null
 }
 var months =['january', 'jan', 'february', 'feb', 'march', 'mar', 'april', 'apr', 'may', 'june', 'jun', 'july', 'jul', 'august' , 'aug','september', 'sep', 'sept' , 'october', 'oct', 'november', 'nov', 'december', 'dec'];
 var days = ['monday', 'mon', 'tuesday', 'tues','tue', 'wednesday', 'wed', 'thursday', 'thu', 'thurs', 'friday', 'fri', 'saturday','sat','sun', 'sunday']
@@ -37,6 +38,7 @@ function parseIsChart($clicked) {
 	if($chart_div.length > 0) {
 		chart_features['foundChart'] = true;
 	}
+	// chart_features['chartDiv'] = $chart_div;
 
 }
 
@@ -303,6 +305,11 @@ $(document).click(function(e) {
 			click_called = false;
 			return;
 		}
+		// console.log(chart_features['chartDiv'][0].getBoundingClientRect());
+		// var chart_img = null;
+		// chrome.tabs.captureVisibleTab(null, {}, function (image) {
+		// 	chart_img=image;
+		//  });
 		console.log("success");
 		console.log(chart_features);
 		var request = new XMLHttpRequest();
@@ -311,10 +318,15 @@ $(document).click(function(e) {
 		request.send();
 		// console.log(html);
 		
-		var res = window.open("", "newWindow");
+		var res = window.open("", "_blank");
 		res.document.body.innerHTML = html;
 		// modify the appropriate html elements here! 
-		res.document.getElementById('firstSectionContent').innerHTML = JSON.stringify(chart_features);
+		// res.document.getElementById('contactDetails').innerHTML = chart_img;
+		// var canvas = res.document.getElementById("chartImg");
+		// canvas.width = chart_img.width;
+		// canvas.height = chart_img.height;
+		// var context = canvas.getContext("2d");
+		// context.drawImage(image, 0, 0);
 		updatetype(chart_features, res);
 		updatetitle(chart_features, res);
 		updatexaxis(chart_features, res);

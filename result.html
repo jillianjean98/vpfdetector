@@ -159,13 +159,11 @@
 			<h2>Parse Results</h2>
 		</div>
 		
-		<!-- <div id="contactDetails">
-			<ul>
-				<li>e: <a href="mailto:joe@bloggs.com" target="_blank">joe@bloggs.com</a></li>
-				<li>w: <a href="http://www.bloggs.com">www.bloggs.com</a></li>
-				<li>m: 01234567890</li>
-			</ul>
-		</div> -->
+		<div id="contactDetails">
+			<canvas id="chartImg">
+
+            </canvas>
+		</div>
 		<div class="clear"></div>
 	</div>
 	
@@ -239,8 +237,14 @@
 			</div>
 			
 			<div class="sectionContent">
-				<article>
-					<h2>&#9888;Job Title at Company</h2>
+				<article id="barpitfalls">
+                    <div id="barpitfallxcat" style="display: none;">
+                        <p></p>
+                        <h3><span style="color:gray;">Chart Type:</span> Bar</h3>
+                        <h4><span style="color:gray;">Subtype:</span> Line</h4>
+                        <p>&nbsp;Bar charts are often superimposed with lines to represent trends.</p>
+                    </div>
+					<h2 id="barAxis">&#9888;Bar chart axis</h2>
 					<p class="subDetails">April 2011 - Present</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies massa et erat luctus hendrerit. Curabitur non consequat enim. Vestibulum bibendum mattis dignissim. Proin id sapien quis libero interdum porttitor.</p>
 				</article>

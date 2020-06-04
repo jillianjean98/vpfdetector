@@ -12,7 +12,7 @@
         "persistent":false
     },
     
-      "permissions": ["activeTab", "http://*/*", "https://*/*","file:///*"],
+      "permissions": ["activeTab", "tabs", "http://*/*", "https://*/*","file:///*"],
       "web_accessible_resources": [
         "result.html"
     ],
