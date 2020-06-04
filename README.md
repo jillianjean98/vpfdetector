@@ -2,7 +2,7 @@
 #### Chrome Extension created for CMSC 25900 
 
 ## Demo Video
-#### https://youtu.be/mFZ3pT9sia0 
+#### [https://www.youtube.com/watch?v=n7mm9MrPyaA](https://www.youtube.com/watch?v=n7mm9MrPyaA)
 --- 
 ## How to use
 
