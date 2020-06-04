@@ -40,7 +40,8 @@ function parseType($clicked) {
 	var line_matches = $svg.find('[class*="line"]').length;
 	var bar_matches = $svg.find('[class*="bar"]').length;
 	var rect_matches = $svg.find('rect').length;
-	if(Math.max(line_matches, bar_matches, rect_matches) == line_matches) {
+	console.log(line_matches + ", " + bar_matches + ", "+rect_matches);
+	if(Math.max(line_matches, bar_matches, rect_matches) == line_matches && line_matches > 0) {
 		chart_features['type'] = 'line';
 		if(bar_matches > 0  && rect_matches > 10) {
 			chart_features['subtype'] = 'bar';
@@ -269,12 +270,13 @@ function updatePitfallsType(features, res) {
 function checkSuccess() {
 	if(chart_features['x_axis'] == null && chart_features['y_axis'] == null && chart_features['title'] == null){
 		if(chart_features['type'] == null) {
-			window.alert("could not parse any chart features from that object, try a different object");
-			return false;
+			var msg = "Could not parse any chart features from the object you clicked. Do you still want to see general visualization advice?"
+			+ " Otherwise, you can select a different object.";
+			return window.confirm(msg);
 		} else if(chart_features['foundChart']) {
 			return true;
 		} else {
-			var msg = "The object you clicked may not be a chart, do you still want to attempt to analyze it?"
+			var msg = "Only able to parse limited chart information from this object, do you still want to attempt to analyze it?"
 			+ " Otherwise, you can select a different object.";
 			return window.confirm(msg);
 		}
