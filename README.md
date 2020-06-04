@@ -1,8 +1,11 @@
 # Visualization Pitfall Detector
 #### Chrome Extension created for CMSC 25900 
 
+## Demo Video
+#### https://youtu.be/mFZ3pT9sia0 
+--- 
 ## How to use
----
+
 ### Installation 
 
 This Chrome Extension does not yet exist on the chrome web store, so you will need to manually enable it. 
@@ -35,6 +38,7 @@ Here are a few charts that the extension works well with, from two different new
 - https://www.wsj.com/articles/drivers-take-advantage-of-low-gas-prices-as-states-reopen-11591003803
   - Average price chart
   - Apple Maps requests chart
+- Also see the description of the video above for more examples. 
 ---
 ## Limitations
 - Limited parsing abilities
