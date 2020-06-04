@@ -11,7 +11,6 @@ button {
      font-size: large;
      padding: 0;
      margin: 0;
-     margin-bottom: 1em;
      cursor: pointer;
 }
 
@@ -23,7 +22,7 @@ ul {
 
 li a {
   display: block;
-  padding: 8px 16px;
+  padding: 8px 8px;
   text-decoration: none;
 }
 

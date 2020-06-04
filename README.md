@@ -38,8 +38,9 @@ Here are a few charts that the extension works well with, from two different new
 ---
 ## Limitations
 - Limited parsing abilities
-  - It is way more difficult than I thought it would be to get information from svg/html tags, and there is an extreme lack of consistency between charts. It's like there's an every chart for itself mentality for creators, there is very little standarization
+  - It is way more difficult than I thought it would be to get information from svg/html tags, and there is an extreme lack of consistency between charts. It's like there's an every chart for itself mentality for creators, there is very little standardization
 - Only supports 2 chart types, line and bar
+- Assumes the y-axis is the independent axis when displaying possible pitfalls. 
 - Can only generate specific feedback about axis labels if they fit in a few defined categories or intersection of categories. Other advice is generic based on chart type. 
 - Doesn't show chart on same page as results. 
   
@@ -51,3 +52,7 @@ Here are a few charts that the extension works well with, from two different new
 - Use nlp to parse meaning out of chart titles or arbitrary axis labels
 - Look in the surrounding text to find references to the chart
 - Add parsing of the data source if cited, and include information on that
+- Improve code logic/efficiency.
+  - Communication between scripts in Chrome extensions is messy, as is loading/updating a results page. 
+
+Results page based on a template modified from Thomas Hardy: http://www.thomashardy.me.uk/free-responsive-html-css3-cv-template
