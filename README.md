@@ -27,6 +27,14 @@ The extension should now be enabled, and appear in your toolbar next to the url 
 5. A new tab/window will open with the results of parsing the visualization
 6. To parse a new graph, repeat the process from (1). 
 
+### Examples
+Here are a few charts that the extension works well with, from two different news sources. Consider these as a proof-of-concept. 
+- https://www.nytimes.com/interactive/2020/world/coronavirus-maps.html 
+  - Total Cases chart at top of page
+  - New reported cases/deaths charts halfway down
+- https://www.wsj.com/articles/drivers-take-advantage-of-low-gas-prices-as-states-reopen-11591003803
+  - Average price chart
+  - Apple Maps requests chart
 ---
 ## Limitations
 - Limited parsing abilities
